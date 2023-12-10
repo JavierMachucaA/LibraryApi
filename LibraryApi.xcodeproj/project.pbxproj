@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517248462B25558B008F8DB9 /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517248452B25558B008F8DB9 /* SearchRepositoryImpl.swift */; };
+		517248492B255828008F8DB9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517248482B255828008F8DB9 /* SearchViewModel.swift */; };
 		51F1F6912B1E9DC5006C2029 /* LibraryApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6902B1E9DC5006C2029 /* LibraryApiApp.swift */; };
 		51F1F6932B1E9DC5006C2029 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6922B1E9DC5006C2029 /* ContentView.swift */; };
 		51F1F6952B1E9DC8006C2029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F1F6942B1E9DC8006C2029 /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 		51F1F6A32B1E9DC8006C2029 /* LibraryApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6A22B1E9DC8006C2029 /* LibraryApiTests.swift */; };
 		51F1F6AD2B1E9DC8006C2029 /* LibraryApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6AC2B1E9DC8006C2029 /* LibraryApiUITests.swift */; };
 		51F1F6AF2B1E9DC8006C2029 /* LibraryApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6AE2B1E9DC8006C2029 /* LibraryApiUITestsLaunchTests.swift */; };
+		51F1F6C42B1EAB04006C2029 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6C32B1EAB04006C2029 /* Book.swift */; };
+		51F1F6C82B1EAC9D006C2029 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6C72B1EAC9D006C2029 /* SearchResult.swift */; };
+		51F1F6CB2B1EAD31006C2029 /* ISearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1F6CA2B1EAD31006C2029 /* ISearchRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		517248452B25558B008F8DB9 /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
+		517248482B255828008F8DB9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		51F1F68D2B1E9DC5006C2029 /* LibraryApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F1F6902B1E9DC5006C2029 /* LibraryApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApiApp.swift; sourceTree = "<group>"; };
 		51F1F6922B1E9DC5006C2029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,9 @@
 		51F1F6A82B1E9DC8006C2029 /* LibraryApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F1F6AC2B1E9DC8006C2029 /* LibraryApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApiUITests.swift; sourceTree = "<group>"; };
 		51F1F6AE2B1E9DC8006C2029 /* LibraryApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51F1F6C32B1EAB04006C2029 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		51F1F6C72B1EAC9D006C2029 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		51F1F6CA2B1EAD31006C2029 /* ISearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		517248442B255539008F8DB9 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				517248452B25558B008F8DB9 /* SearchRepositoryImpl.swift */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		517248472B255810008F8DB9 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				517248482B255828008F8DB9 /* SearchViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		51F1F6842B1E9DC5006C2029 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,9 @@
 		51F1F68F2B1E9DC5006C2029 /* LibraryApi */ = {
 			isa = PBXGroup;
 			children = (
+				51F1F6CC2B1EAF44006C2029 /* Services */,
+				51F1F6C92B1EAD0B006C2029 /* Repository */,
+				51F1F6C22B1EA98B006C2029 /* Models */,
 				51F1F6902B1E9DC5006C2029 /* LibraryApiApp.swift */,
 				51F1F6922B1E9DC5006C2029 /* ContentView.swift */,
 				51F1F6942B1E9DC8006C2029 /* Assets.xcassets */,
@@ -127,6 +156,48 @@
 				51F1F6AE2B1E9DC8006C2029 /* LibraryApiUITestsLaunchTests.swift */,
 			);
 			path = LibraryApiUITests;
+			sourceTree = "<group>";
+		};
+		51F1F6C22B1EA98B006C2029 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				517248472B255810008F8DB9 /* viewModel */,
+				51F1F6C62B1EAC7F006C2029 /* Request */,
+				51F1F6C52B1EAC69006C2029 /* DTO */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51F1F6C52B1EAC69006C2029 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				51F1F6C32B1EAB04006C2029 /* Book.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		51F1F6C62B1EAC7F006C2029 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				51F1F6C72B1EAC9D006C2029 /* SearchResult.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		51F1F6C92B1EAD0B006C2029 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				517248442B255539008F8DB9 /* impl */,
+				51F1F6CA2B1EAD31006C2029 /* ISearchRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		51F1F6CC2B1EAF44006C2029 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				51F1F6932B1E9DC5006C2029 /* ContentView.swift in Sources */,
+				517248492B255828008F8DB9 /* SearchViewModel.swift in Sources */,
 				51F1F6912B1E9DC5006C2029 /* LibraryApiApp.swift in Sources */,
+				51F1F6CB2B1EAD31006C2029 /* ISearchRepository.swift in Sources */,
+				51F1F6C82B1EAC9D006C2029 /* SearchResult.swift in Sources */,
+				51F1F6C42B1EAB04006C2029 /* Book.swift in Sources */,
+				517248462B25558B008F8DB9 /* SearchRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
